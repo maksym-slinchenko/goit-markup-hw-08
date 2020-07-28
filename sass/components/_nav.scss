@@ -1,0 +1,112 @@
+.nav-list {
+  a:focus,
+  a:hover {
+    color: $accent-text-color;
+  }
+}
+.nav-list {
+  a {
+    color: $title-text-color;
+    @extend %nav-font;
+    @extend %main-animation;
+  }
+}
+.nav-list {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 85px;
+}
+.nav-list-item {
+  display: flex;
+  position: relative;
+}
+.nav-list-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.current-page {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-text-color;
+    border-radius: 2px;
+  }
+}
+.site-nav-main {
+  display: flex;
+  align-items: center;
+}
+.site-nav-secondary {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.site-nav-secondary-portfolio {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  margin-left: auto;
+}
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+.our-mail,
+.our-mail-icon,
+.our-phone,
+.our-phone-icon {
+  @extend %main-animation;
+}
+
+.contacts-item {
+  &:hover .our-mail,
+  &:hover .our-mail-icon,
+  &:focus .our-mail,
+  &:focus .our-mail-icon {
+    color: $accent-text-color;
+    fill: $accent-text-color;
+  }
+}
+
+.contacts-item {
+  &:hover .our-phone,
+  &:hover .our-phone-icon,
+  &:focus .our-phone,
+  &:focus .our-phone-icon {
+    color: $accent-text-color;
+    fill: $accent-text-color;
+  }
+}
+
+.contacts {
+  .our-mail {
+    display: inline-block;
+    margin-right: 30px;
+    @extend %nav-font;
+    color: $thirtly-text-color;
+    margin-left: 10px;
+  }
+}
+
+.contacts {
+  .our-phone {
+    @extend %nav-font;
+    color: $thirtly-text-color;
+    margin-left: 10px;
+  }
+}

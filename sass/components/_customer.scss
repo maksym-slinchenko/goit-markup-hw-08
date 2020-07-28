@@ -1,0 +1,49 @@
+.cusnomer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer {
+  text-align: center;
+}
+.customer-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.customer-list {
+  li {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+.customer-list {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $icon-color;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+  }
+}
+.customer-list {
+  a {
+    &:hover,
+    &:focus {
+      border-color: $accent-text-color;
+      fill: $accent-text-color;
+    }
+  }
+}
+.customer-list {
+  a {
+    @extend %main-animation;
+  }
+}
+
+.customer-title {
+  @extend %title-h2-font;
+}

@@ -1,0 +1,49 @@
+/* Чем мы занимаемся */
+.what-do-we-do-section {
+  padding-bottom: 94px;
+}
+.primery-what-do-we-do {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.what-do-we-do-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+}
+
+.what-do-we-do-title {
+  @extend %title-h2-font;
+}
+.what-do-we-do-list {
+  li {
+    display: flex;
+    position: relative;
+  }
+}
+.what-do-we-do-list {
+  li {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+.what-do-we-do-list {
+  p {
+    height: 70px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    position: absolute;
+    bottom: 0;
+  }
+}

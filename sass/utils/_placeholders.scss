@@ -1,0 +1,55 @@
+%main-animation {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+%nav-font {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+
+%network-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: $icon-color;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+%title-h2-font {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+%footer-adress-font {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+%footer-subscribe {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+%moving-label {
+  top: -16px;
+  left: 16px;
+}
+%modal-input-font {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $thirtly-text-color;
+}
