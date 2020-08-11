@@ -12,12 +12,25 @@
   }
 }
 .nav-list {
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
-  margin-left: 85px;
+  display: flex;
+  flex-direction: column;
 }
 .nav-list-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts {
+   display: flex;
+   justify-content: center;
+}
+
+  .contacts-item {
+  display: block;
+  
+}
+
+/*.nav-list-item {
   display: flex;
   position: relative;
 }
@@ -56,16 +69,9 @@
   border-bottom: 1px solid #ececec;
 }
 
-.contacts {
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  margin-left: auto;
-}
-.contacts-item {
-  display: flex;
-  align-items: center;
-}
+
+
+
 .our-mail,
 .our-mail-icon,
 .our-phone,

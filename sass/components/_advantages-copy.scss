@@ -1,0 +1,67 @@
+/* Наши преимущества */
+.advantages-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: width 1200px) {
+    flex-direction: row;
+  }
+}
+.advantages-list {
+  li {
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px, 1200px) {
+    }
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+  }
+  .advantages-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .advantages-list {
+    img {
+      display: block;
+    }
+  }
+  .advantages-list {
+    h3 {
+      height: 16px;
+      margin: 0;
+      font-weight: 700;
+      @include advantages-fonts(1.14);
+      text-transform: uppercase;
+      color: $title-text-color;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.advantages-list {
+  p {
+    height: 75px;
+    margin: 0;
+    @include advantages-fonts(1.71);
+  }
+}
