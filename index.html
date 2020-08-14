@@ -14,39 +14,52 @@
     <!-- Топ линия -->
     <header>
       <nav class="container site-nav-main">
-        <div class="container site-nav-secondary">
+        <div class="site-nav-secondary">
           <a href="index.html" class="logo"
             ><span class="logo-firs-half">Web</span>
             <span class="logo-second-half">Studio</span>
           </a>
-          <ul class="nav-list">
-            <li class="nav-list-item current-page">
-              <a href="./index.html">Студия</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-list-item"><a href="">Контакты</a></li>
-          </ul>
-          <ul class="contacts">
-            <li class="contacts-item">
-              <svg class="our-mail-icon" width="17" height="17">
-                <use href="./images/symbol-defs.svg#envelope-hover"></use>
-              </svg>
-              <a class="our-mail" href="mailto:info@devstudio.com">
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <svg class="our-phone-icon" width="17" height="17">
-                <use href="./images/symbol-defs.svg#smartphone"></use>
-              </svg>
-              <a class="our-phone" href="tel:+38-096-111-11-11"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <svg class="open-menu" width="40" height="40">
+            <use href="./images/symbol-defs.svg#menu_40px">
+            </use>
+          </svg>
+          <svg class="close-menu" width="40" height="40">
+            <use href="./images/symbol-defs.svg#close_40px">
+            </use>
+          </svg>
         </div>
+          <div class="nav-and-contacts">
+            <ul class="nav-list">
+              
+              <li class="nav-list-item current-page">
+                <a  href="./index.html">Студия</a>
+              </li>
+              
+              <li class="nav-list-item">
+                <a href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-list-item"><a href="">Контакты</a></li>
+            </ul>
+            <ul class="contacts">
+              <li class="contacts-item">
+                <svg class="our-mail-icon" width="17" height="17">
+                  <use href="./images/symbol-defs.svg#envelope-hover"></use>
+                </svg>
+                <a class="our-mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <svg class="our-phone-icon" width="17" height="17">
+                  <use href="./images/symbol-defs.svg#smartphone"></use>
+                </svg>
+                <a class="our-phone" href="tel:+38-096-111-11-11"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+       
       </nav>
     </header>
     <main>
@@ -59,8 +72,9 @@
       </div>
       <!-- Наши преимущества -->
       <section class="advantages-section">
-        <ul class="container advantages-list">
-          <li>
+        <div class="container">
+        <ul class="advantages-list">
+          <li class="advantages-list-item">
             <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#antena"></use>
@@ -72,7 +86,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="advantages-list-item">
             <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#clock"></use>
@@ -84,7 +98,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="advantages-list-item">
             <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#diagram"></use>
@@ -96,7 +110,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="advantages-list-item">
             <div class="image-container">
               <svg class="advantages-icon">
                 <use href="./images/symbol-defs.svg#astronaut"></use>
@@ -109,8 +123,9 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <!-- Чем мы занимаемся -->
+    <!-- Чем мы занимаемся -->
       <section class="what-do-we-do-section">
         <div class="container primery-what-do-we-do">
           <h2 class="what-do-we-do-title">Чем мы занимаемся</h2>
@@ -118,19 +133,22 @@
           <ul class="what-do-we-do-list">
             <li>
               <a class="wdwd-link" href="">
-                <img src="./images/leptop.jpg" alt="ноутбук" width="370" />
+                <img src="./images/what-do-we-do/img-1.jpg" alt="ноутбук" 
+                srcset="./images/what-do-we-do/img@2x-1.jpg 2x"/>
                 <p>Десктопные приложения</p>
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./images/phone.jpg" alt="смартфон" width="370" />
+                <img src="./images/what-do-we-do/img-2.jpg" alt="смартфон"
+                srcset="./images/what-do-we-do/img@2x-2.jpg 2x"/>
                 <p>Мобильные приложения</p>
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./images/monitor.jpg" alt="монитор" width="370" />
+                <img src="./images/what-do-we-do/img-3.jpg" alt="монитор" 
+                srcset="./images/what-do-we-do/img@2x-3.jpg 2x"/>
                 <p>Дизайнерские решения</p>
               </a>
             </li>
@@ -141,14 +159,23 @@
       <section class="our-team-section">
         <div class="container our-team">
           <h2 class="our-team-title">Наша команда</h2>
+          <div class="our-team-list-container">
           <ul class="our-team-list" lang="en">
             <li class="our-team-item">
-              <img
-                src="./images/john-smith.jpg"
-                alt="John Smith's photo"
-                width="270"
-              />
 
+<!-- <img
+srcset=
+"./img/hw8/laptop-294.jpg 294w,
+./img/hw8/laptop@2x.jpg 588w,"
+  src="./img/hw8/laptop-294.jpg" alt="laptop" sizes="(min-width: 1200px) 294px"> -->
+
+              <img 
+              srcset="
+              ./images/our-team/mobile/img450-1.jpg 1x,
+              ./images/our-team/mobile/img900@2x-1.jpg 2x"
+              src="./images/our-team/mobile/img450-1.jpg"
+              alt="John Smith's photo"
+              />
               <h3>John Smith</h3>
               <p>Product Designer</p>
               <!-- Социальные сети -->
@@ -184,12 +211,13 @@
               </ul>
             </li>
             <li class="our-team-item">
-              <img
-                src="./images/marta-stewart.jpg"
-                alt="Marta Stewart's photo"
-                width="270"
-              />
-              <h3>Marta Stewart</h3>
+              <img 
+                src="./images/our-team/mobile/img450-2.jpg"
+               srcset="
+                ./images/our-team/mobile/img450-2.jpg 1x,
+                ./images/our-team/mobile/img900@2x-2.jpg 2x"
+                alt="Marta Stewart's photo"/>
+             <h3>Marta Stewart</h3>
               <p>Frontend Developer</p>
               <!-- Социальные сети -->
               <ul class="networks">
@@ -225,10 +253,10 @@
             </li>
             <li class="our-team-item">
               <img
-                src="./images/robert-jakis.jpg"
-                alt="Robert Jakis's photo"
-                width="270"
-              />
+               srcset="
+              ./images/our-team/mobile/img450-3.jpg 1x,
+              ./images/our-team/mobile/img900@2x-3.jpg 2x"
+               src="./images/our-team/mobile/img450-3.jpg" alt="Robert Jakis's photo"/>
               <h3>Robert Jakis</h3>
               <p>Marketing</p>
               <!-- Социальные сети -->
@@ -264,11 +292,13 @@
               </ul>
             </li>
             <li class="our-team-item">
+              
               <img
-                src="./images/martin-doe.jpg"
-                alt="Martin Doe's photo"
-                width="270"
-              />
+               srcset="
+              ./images/our-team/mobile/img450-4.jpg 1x,
+              ./images/our-team/mobile/img900@2x-4.jpg 2x"
+              src="./images/our-team/mobile/img450-4.jpg" alt="Martin Doe's photo"
+                />
               <h3>Martin Doe</h3>
               <p>UI Designer</p>
               <!-- Социальные сети -->
@@ -304,6 +334,7 @@
               </ul>
             </li>
           </ul>
+          </div>
         </div>
       </section>
       <!-- Постоянные клиенты -->
@@ -490,3 +521,4 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+

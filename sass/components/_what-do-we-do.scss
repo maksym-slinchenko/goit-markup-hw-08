@@ -1,7 +1,11 @@
 /* Чем мы занимаемся */
 .what-do-we-do-section {
-  padding-bottom: 94px;
+  padding-top: 94px;
+  @media screen and (max-width: calc(#{$desktop-break-point} - 1px)) {
+    display: none;
+  }
 }
+
 .primery-what-do-we-do {
   display: flex;
   flex-direction: column;

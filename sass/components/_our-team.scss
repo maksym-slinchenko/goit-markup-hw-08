@@ -1,7 +1,9 @@
 .our-team-section {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  @media screen and (min-width: $desktop-break-point) {
+    padding-top: 94px;
+  }
 }
 .our-team {
   text-align: center;
@@ -9,14 +11,33 @@
 .our-team-title {
   @extend %title-h2-font;
 }
+.our-team-list-container {
+  margin-top: 30px;
+}
 .our-team-list {
   display: flex;
-  margin-top: 50px;
+  flex-direction: column;
+  margin: -15px;
+  @media screen and (min-width: $tablet-break-point) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop-break-point) {
+    margin-top: 50px;
+  }
 }
 .our-team-item {
-  &:not(:first-child) {
-    margin-left: 30px;
+  width: 100%;
+  margin: 15px;
+  @media screen and (min-width: $tablet-break-point) {
+    width: calc((100% - 15px * 4) / 2);
   }
+  @media screen and (min-width: $desktop-break-point) {
+    width: calc((100% - 15px * 8) / 4);
+  }
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  // }
 }
 .our-team-item {
   background: $secondary-text-color;
